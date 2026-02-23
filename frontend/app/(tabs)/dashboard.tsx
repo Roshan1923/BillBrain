@@ -67,10 +67,6 @@ export default function DashboardScreen() {
           <View style={styles.headerLeft}>
             <Image source={require('../../assets/images/logo-full.png')} style={styles.headerLogo} resizeMode="contain" />
             <View>
-              <View style={styles.headerBrand}>
-                <Text style={styles.headerBill}>Bill</Text>
-                <Text style={styles.headerBrain}>Brain</Text>
-              </View>
               <Text style={styles.subtitle}>Hello, {user?.name?.split(' ')[0] || 'there'}</Text>
             </View>
           </View>
