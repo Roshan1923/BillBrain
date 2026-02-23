@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
   scroll: { padding: 20, paddingBottom: 40 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 },
   headerLeft: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  headerLogoCircle: { width: 44, height: 44, borderRadius: 22, overflow: 'hidden', backgroundColor: '#000000' },
+  headerLogoCircle: { width: 44, height: 44, borderRadius: 22, overflow: 'hidden', backgroundColor: '#050505', borderWidth: 1.5, borderColor: 'rgba(59,155,245,0.25)' },
   headerLogoImage: { width: 44, height: 44 },
   headerBrand: { flexDirection: 'row', alignItems: 'baseline' },
   headerBill: { fontSize: 20, fontWeight: '800', color: '#3B9BF5' },
