@@ -65,7 +65,7 @@ export default function DashboardScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.headerLeft}>
-            <Image source={require('../../assets/images/logo-icon.png')} style={styles.headerLogo} resizeMode="contain" />
+            <Image source={require('../../assets/images/logo-full.png')} style={styles.headerLogo} resizeMode="contain" />
             <View>
               <View style={styles.headerBrand}>
                 <Text style={styles.headerBill}>Bill</Text>
