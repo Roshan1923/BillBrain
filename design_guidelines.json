@@ -1,0 +1,136 @@
+{
+  "brand_identity": {
+    "name": "BillBrain",
+    "mission": "The Smart Accountant in Your Pocket",
+    "tone": "Organized, Efficient, Trustworthy, Electric",
+    "aesthetic": "Minimal Fintech, Dark Mode First, High Contrast",
+    "key_metaphor": "Neural Networks meets Paper Trail"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "scale": {
+      "display": "text-4xl font-bold tracking-tight",
+      "h1": "text-3xl font-bold tracking-tight",
+      "h2": "text-2xl font-semibold tracking-tight",
+      "h3": "text-xl font-semibold",
+      "body_lg": "text-lg font-normal leading-relaxed",
+      "body": "text-base font-normal leading-relaxed",
+      "caption": "text-sm text-muted-foreground",
+      "tiny": "text-xs font-medium uppercase tracking-wider"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0274BC",
+        "foreground": "#FFFFFF",
+        "deep": "#025a9b",
+        "light": "#22B3F9"
+      },
+      "secondary": {
+        "DEFAULT": "#1AC9FF",
+        "foreground": "#000000",
+        "electric": "#59D2FF",
+        "subtle": "#B0DFF0"
+      },
+      "business": {
+        "primary": "#10B981",
+        "accent": "#34D399",
+        "dark": "#064E3B"
+      },
+      "background": {
+        "light": "#FAFAFA",
+        "dark": "#050505",
+        "card_light": "#FFFFFF",
+        "card_dark": "#121212"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      }
+    },
+    "theme_strategy": {
+      "light": {
+        "bg": "bg-[#FAFAFA]",
+        "text": "text-slate-900",
+        "card": "bg-white shadow-sm border-slate-200"
+      },
+      "dark": {
+        "bg": "bg-[#050505]",
+        "text": "text-slate-50",
+        "card": "bg-[#121212] border-white/5"
+      }
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container": "p-6",
+      "section": "py-8",
+      "gap": "gap-4"
+    },
+    "border_radius": {
+      "card": "rounded-xl",
+      "button": "rounded-full",
+      "input": "rounded-lg"
+    },
+    "grid_system": {
+      "dashboard": "Bento Grid: Mixed spans (1x1, 2x1, 2x2)",
+      "receipts": "List View: Thumbnail Left + Details Right"
+    }
+  },
+  "components": {
+    "Button": {
+      "primary": "bg-[#0274BC] h-12 rounded-full flex-row items-center justify-center px-6 shadow-lg shadow-blue-900/20 active:scale-95 transition-transform",
+      "secondary": "bg-[#1AC9FF] h-12 rounded-full flex-row items-center justify-center px-6 active:scale-95",
+      "outline": "border border-[#0274BC] h-12 rounded-full flex-row items-center justify-center px-6 bg-transparent",
+      "ghost": "h-10 px-4 rounded-lg flex-row items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800",
+      "scan_fab": "absolute bottom-6 right-6 w-16 h-16 rounded-full bg-[#1AC9FF] items-center justify-center shadow-2xl shadow-cyan-500/40 z-50 elevation-5"
+    },
+    "Card": {
+      "base": "bg-white dark:bg-[#121212] rounded-xl p-5 border border-slate-100 dark:border-white/10 shadow-sm",
+      "interactive": "active:bg-slate-50 dark:active:bg-white/5 transition-colors"
+    },
+    "Input": {
+      "base": "h-12 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 text-slate-900 dark:text-white focus:border-[#1AC9FF]"
+    },
+    "Badge": {
+      "base": "px-3 py-1 rounded-full text-xs font-semibold",
+      "personal": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+      "business": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
+    }
+  },
+  "assets": {
+    "images": {
+      "auth_background": "https://images.unsplash.com/photo-1764336312138-14a5368a6cd3",
+      "receipt_hero": "https://images.pexels.com/photos/4968388/pexels-photo-4968388.jpeg",
+      "user_placeholder": "https://images.unsplash.com/photo-1755190897791-7040dfdb988f"
+    },
+    "icons": {
+      "library": "Lucide React Native (lucide-react-native)",
+      "styles": "Stroke width 2, rounded caps"
+    }
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: This is a React Native Expo project. Use <View>, <Text>, <TouchableOpacity> instead of <div>, <span>, <button>.",
+    "STYLING: Use 'nativewind' (Tailwind class names). If nativewind is not configured, prioritize standard React Native 'style={StyleSheet.create(...)}' but mimicking the Tailwind spacing/colors defined above.",
+    "NAVIGATION: Use 'expo-router' (Stack, Tabs). File structure should be in /app directory.",
+    "ICONS: Use 'lucide-react-native' for all icons.",
+    "THEME: Implement a ThemeContext or use 'useColorScheme' from React Native to toggle between the defined Light/Dark palettes.",
+    "COMPONENTS: Do not use HTML components. Build reusable UI components (Button.js, Card.js) in /components/ui/ that accept 'className' props.",
+    "DATA-TESTID: Add 'testID' prop (React Native equivalent of data-testid) to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "Avoid 'Inter' for headings; use 'Manrope' or system font weight 700.",
+    "Never use pure black (#000000) for backgrounds; use #050505 or #121212.",
+    "Inputs must have at least 48px height for touch accessibility.",
+    "Gradients should be subtle (opacity 10-20%) or used only on primary actions.",
+    "Charts should use the defined 'Personal' (Blue) vs 'Business' (Green) color coding logic.",
+    "Always handle Safe Area Insets (useSafeAreaInsets) for top/bottom padding."
+  ]
+}
