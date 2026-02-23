@@ -51,7 +51,7 @@ export default function AuthScreen() {
         <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
           {/* Logo */}
           <View style={styles.logoContainer}>
-            <Image source={require('../assets/images/logo-icon.png')} style={styles.logo} resizeMode="contain" />
+            <Image source={require('../assets/images/logo-full.png')} style={styles.logo} resizeMode="contain" />
             <View style={styles.brandRow}>
               <Text style={styles.brandBill}>Bill</Text>
               <Text style={styles.brandBrain}>Brain</Text>
