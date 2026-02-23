@@ -64,9 +64,15 @@ export default function DashboardScreen() {
       >
         {/* Header */}
         <View style={styles.header}>
-          <View>
-            <Text style={styles.greeting}>Hello, {user?.name?.split(' ')[0] || 'there'}</Text>
-            <Text style={styles.subtitle}>Your spending overview</Text>
+          <View style={styles.headerLeft}>
+            <Image source={require('../../assets/images/logo-icon.png')} style={styles.headerLogo} />
+            <View>
+              <View style={styles.headerBrand}>
+                <Text style={styles.headerBill}>Bill</Text>
+                <Text style={styles.headerBrain}>Brain</Text>
+              </View>
+              <Text style={styles.subtitle}>Hello, {user?.name?.split(' ')[0] || 'there'}</Text>
+            </View>
           </View>
           <View style={styles.avatarCircle}>
             <Text style={styles.avatarText}>{user?.name?.[0]?.toUpperCase() || 'U'}</Text>
