@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   scroll: { flexGrow: 1, paddingHorizontal: 24, paddingBottom: 40, justifyContent: 'center' },
   logoContainer: { alignItems: 'center', marginBottom: 24 },
-  logo: { width: 260, height: 130 },
+  logo: { width: 180, height: 90 },
   brandRow: { flexDirection: 'row', alignItems: 'baseline', marginTop: 8 },
   brandBill: { fontSize: 30, fontWeight: '800', color: '#3B9BF5' },
   brandBrain: { fontSize: 30, fontWeight: '800', color: '#8BA3B8' },
