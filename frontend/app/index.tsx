@@ -52,7 +52,7 @@ export default function AuthScreen() {
           {/* Logo */}
           <View style={styles.logoContainer}>
             <View style={styles.logoCircle}>
-              <Image source={require('../assets/images/logo-icon.png')} style={styles.logoImage} resizeMode="contain" />
+              <Image source={require('../assets/images/logo-icon.png')} style={styles.logoImage} resizeMode="cover" />
             </View>
             <View style={styles.brandRow}>
               <Text style={styles.brandBill}>Bill</Text>
